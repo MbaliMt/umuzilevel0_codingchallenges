@@ -2,11 +2,11 @@
 
 function numberToTime(number){
     var timeInHours = number/60;
-    var realTimeInNumbers = math.trunc(timeInHours);
+    var realTimeInNumbers = Math.trunc(timeInHours);
     var timeInMinutes = realTimeInNumbers * 60;
     var varrealTimeInMinutes = number - timeInMinutes;
-    print("The time is" +realTimeInNumbers +"hours" +timeInMinutes+"minutes");
+    console.log("The time is " +realTimeInNumbers +" hour(s) " +varrealTimeInMinutes+" minutes");
 
-    print(numberToTime(71))
+    
 }
-console.log(numberToTime(71));
+numberToTime(133);
