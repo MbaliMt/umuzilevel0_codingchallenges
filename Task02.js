@@ -3,4 +3,4 @@ y = (1 + 1) * 2
 z = 1 + ( 1 * 2 )
 a = 1 + 1 * 2 / 2
 b = (1 + 1 * 2 ) /  2
-console.log(x+"\n"+ y+""+z+"\n"+a +"\n"+b)
+console.log(x+"\n"+ y+"\n"+z+"\n"+a +"\n"+b)

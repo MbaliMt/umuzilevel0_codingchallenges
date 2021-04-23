@@ -15,4 +15,5 @@ function findMax(num1, num2, num3){
     }            
     return myList[myList.length -1 ];
 }
-console.log("The maximum number is:", findMax(720,90, 187));
+console.log(findMax(720,90, 187));
+
