@@ -5,17 +5,29 @@ function numberToTime(number){
     var timeInMinutes = number % 60;
 
     if (timeInHours == 1 && timeInMinutes == 1){
-        console.log("The time is " +timeInHours +" hour " +timeInMinutes+" minute");
+        console.log(timeInHours, timeInMinutes);
     }
     else if(timeInHours == 1 && timeInMinutes > 1 ){
-        console.log("The time is " +timeInHours +" hour " +timeInMinutes+" minutes");
+        console.log(+timeInHours ,timeInMinutes);
     }
     else if(timeInHours > 1 && timeInMinutes == 1){
-        console.log("The time is " +timeInHours +" hours " +timeInMinutes+" minute");
+        console.log(timeInHours, timeInMinutes);
+    }
+    else if(timeInHours > 1 && timeInMinutes < 1){
+        console.log(timeInHours, timeInMinutes);
     }
     else if(timeInHours > 1 && timeInMinutes > 1){
-        console.log("The time is " +timeInHours +" hours " +timeInMinutes+" minutes");
+        console.log(timeInHours, timeInMinutes);
     }
-    
+    else if(timeInHours == 1 && timeInMinutes <= 1){
+        console.log(timeInHours, timeInMinutes);
+    }
+    else if(timeInHours <= 1 && timeInMinutes >= 1){
+        console.log(timeInHours, timeInMinutes);
+    }
+    else if(timeInHours <= 1 && timeInMinutes <= 1){
+        console.log(timeInHours, timeInMinutes);
+    }
+        
  }
-numberToTime(63);
+numberToTime(120);
