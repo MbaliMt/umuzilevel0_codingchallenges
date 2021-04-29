@@ -22,10 +22,10 @@ function numberToTime(number){
     else if(timeInHours == 1 && timeInMinutes < 1){
         console.log(timeInHours+" hour", timeInMinutes+" minutes");
     }
-    else if(timeInHours < 1 && timeInMinutes == 1){
+    else if(timeInHours <= 1 && timeInMinutes == 1){
         console.log(timeInHours+" hours", timeInMinutes+" minute");
     }
-    else if(timeInHours < 1 && timeInMinutes < 1){
+    else if(timeInHours < 1 && timeInMinutes <= 1){
         console.log(timeInHours+" hours", timeInMinutes+" minutes");
     }
         
