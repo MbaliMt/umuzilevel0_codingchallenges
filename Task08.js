@@ -5,29 +5,29 @@ function numberToTime(number){
     var timeInMinutes = number % 60;
 
     if (timeInHours == 1 && timeInMinutes == 1){
-        console.log(timeInHours, timeInMinutes);
+        console.log(timeInHours+" hour", timeInMinutes+" minute");
     }
     else if(timeInHours == 1 && timeInMinutes > 1 ){
-        console.log(+timeInHours ,timeInMinutes);
+        console.log(+timeInHours+" hour" ,timeInMinutes+" minutes");
     }
     else if(timeInHours > 1 && timeInMinutes == 1){
-        console.log(timeInHours, timeInMinutes);
+        console.log(timeInHours+" hours", timeInMinutes+" minute");
     }
     else if(timeInHours > 1 && timeInMinutes < 1){
-        console.log(timeInHours, timeInMinutes);
+        console.log(timeInHours+" hours", timeInMinutes+" minutes");
     }
     else if(timeInHours > 1 && timeInMinutes > 1){
-        console.log(timeInHours, timeInMinutes);
+        console.log(timeInHours+" hours", timeInMinutes+" minutes");
     }
-    else if(timeInHours == 1 && timeInMinutes <= 1){
-        console.log(timeInHours, timeInMinutes);
+    else if(timeInHours == 1 && timeInMinutes < 1){
+        console.log(timeInHours+" hour", timeInMinutes+" minutes");
     }
-    else if(timeInHours <= 1 && timeInMinutes >= 1){
-        console.log(timeInHours, timeInMinutes);
+    else if(timeInHours < 1 && timeInMinutes == 1){
+        console.log(timeInHours+" hours", timeInMinutes+" minute");
     }
-    else if(timeInHours <= 1 && timeInMinutes <= 1){
-        console.log(timeInHours, timeInMinutes);
+    else if(timeInHours < 1 && timeInMinutes < 1){
+        console.log(timeInHours+" hours", timeInMinutes+" minutes");
     }
         
  }
-numberToTime(120);
+numberToTime(121);
