@@ -11,7 +11,6 @@ function myString(word){
         }   
     }
     const unique = [...new Set([...newLetters])].join('');
-    console.log(unique);
-    console.log();              
+    console.log("Vowels: "+unique);         
 }
 myString("Umuzi");
