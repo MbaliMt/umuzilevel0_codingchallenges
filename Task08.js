@@ -1,33 +1,19 @@
 
-
 function numberToTime(number){
     var timeInHours = Math.trunc(number/60);
     var timeInMinutes = number % 60;
+    let hour = "hour";
+    let minute = "minute";
 
-    if (timeInHours < 1 && timeInMinutes == 1){
-        console.log(timeInHours+" hour", timeInMinutes+" minute");
+    if(timeInHours > 1 || timeInHours == 0){
+      hour += "s";
     }
-    else if(timeInHours == 1 && timeInMinutes > 1 ){
-        console.log(+timeInHours+" hour" ,timeInMinutes+" minutes");
-    }
-    else if(timeInHours > 1 && timeInMinutes == 1){
-        console.log(timeInHours+" hours", timeInMinutes+" minute");
-    }
-    else if(timeInHours > 1 && timeInMinutes < 1){
-        console.log(timeInHours+" hours", timeInMinutes+" minutes");
-    }
-    else if(timeInHours > 1 && timeInMinutes > 1){
-        console.log(timeInHours+" hours", timeInMinutes+" minutes");
-    }
-    else if(timeInHours == 1 && timeInMinutes < 1){
-        console.log(timeInHours+" hour", timeInMinutes+" minutes");
-    }
-    else if(timeInHours < 1 && timeInMinutes == 1){
-        console.log(timeInHours+" hours", timeInMinutes+" minute");
-    }
-    else if(timeInHours < 1 && timeInMinutes < 1){
-        console.log(timeInHours+" hours", timeInMinutes+" minutes");
-    }
-        
- }
-numberToTime(2);
+    if(timeInMinutes > 1 || timeInMinutes == 0){
+      minute += "s";
+    } 
+    console.log(timeInHours+" "+hour+ " "+timeInMinutes+" "+  minute);
+}
+
+numberToTime(0);
+
+
