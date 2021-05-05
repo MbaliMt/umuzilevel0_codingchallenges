@@ -8,11 +8,12 @@ function myString(word1, word2){
                 newWord.push(" "+ word2[n]);               
             }
         }    
-    }   
-    newWord = newWord.toString().split(",")
-    console.log("Common letters:"+newWord.toString());
+    } 
+    const unique = [...new Set([...newWord])].join(', ');
+    console.log("Common letters: "+unique);   
+    
     }
-myString("house", "computers");
+myString("hooouse", "compuuuterssss");
 
 
 
