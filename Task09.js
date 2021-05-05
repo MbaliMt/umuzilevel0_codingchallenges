@@ -10,7 +10,7 @@ function myString(word){
             }
         }   
     }
-    const unique = [...new Set([...newLetters])].join('');
+    const unique = [...new Set([...newLetters])].join(', ');
     console.log("Vowels: "+unique);         
 }
 myString("Umuzi");
